@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
            xmlns:tt="http://www.onvif.org/ver10/schema"
+           xmlns:xmime="http://www.w3.org/2005/05/xmlmime"  <!-- Adicionado -->
            targetNamespace="http://www.onvif.org/ver10/schema"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified"
            version="24.06">
-    <!-- Corrigido: xmime.xsd para xmlmime.xsd -->
     <xs:import namespace="http://www.w3.org/2005/05/xmlmime" schemaLocation="xmlmime.xsd"/>
     <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="xml.xsd"/>
-    <!-- Restante do arquivo permanece inalterado -->
+    <!-- Restante do arquivo -->
     <xs:complexType name="ReferenceToken">
         <xs:simpleContent>
             <xs:extension base="xs:string"/>
         </xs:simpleContent>
     </xs:complexType>
-    <!-- Outros tipos e definições -->
+    <!-- Outros tipos -->
 </xs:schema>
