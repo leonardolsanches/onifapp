@@ -1,1 +1,1 @@
-flask zeep onvif-zeep
+flask zeep onvif-zeep gunicorn
