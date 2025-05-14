@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 # Configuração da câmera
 CAMERA_IP = "100.73.225.133"
-CAMERA_PORT = 80
+CAMERA_PORT = "80"
 CAMERA_USER = "Leonardo"
 CAMERA_PASS = "Theo@2011"
 PRESET_PADRAO = "1"
