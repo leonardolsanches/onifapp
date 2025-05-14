@@ -1,0 +1,32 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+             targetNamespace="http://www.w3.org/2005/05/xmlmime"
+             elementFormDefault="qualified"
+             attributeFormDefault="unqualified">
+      <xs:annotation>
+          <xs:documentation>Schema for XML MIME types</xs:documentation>
+      </xs:annotation>
+      <xs:complexType name="hexBinary">
+          <xs:simpleContent>
+              <xs:extension base="xs:hexBinary">
+                  <xs:attribute ref="xmime:contentType"/>
+              </xs:extension>
+          </xs:simpleContent>
+      </xs:complexType>
+      <xs:complexType name="base64Binary">
+          <xs:simpleContent>
+              <xs:extension base="xs:base64Binary">
+                  <xs:attribute ref="xmime:contentType"/>
+              </xs:extension>
+          </xs:simpleContent>
+      </xs:complexType>
+      <xs:attribute name="contentType" type="xs:string">
+          <xs:annotation>
+              <xs:documentation>Defines the MIME content type of a binary element.</xs:documentation>
+          </xs:annotation>
+      </xs:attribute>
+      <xs:attribute name="expectedContentTypes" type="xs:string">
+          <xs:annotation>
+              <xs:documentation>Expected MIME content types for elements referencing this type declaration.</xs:documentation>
+          </xs:annotation>
+      </xs:attribute>
+  </xs:schema>
