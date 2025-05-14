@@ -8,10 +8,10 @@ import os
 app = Flask(__name__)
 
 # Configuração da câmera
-CAMERA_IP = "192.168.0.4"
-CAMERA_PORT = 8899
-CAMERA_USER = "admin"
-CAMERA_PASS = "admin"
+CAMERA_IP = "100.73.225.133"
+CAMERA_PORT = 80
+CAMERA_USER = "Leonardo"
+CAMERA_PASS = "Theo@2011"
 PRESET_PADRAO = "1"
 WSDL_DIR = os.path.join(os.path.dirname(__file__), "wsdl")
 
