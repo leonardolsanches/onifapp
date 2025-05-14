@@ -1,4 +1,4 @@
 flask
 zeep
-onvif-zeep==0.6.0
+onvif-zeep==0.2.12
 gunicorn
